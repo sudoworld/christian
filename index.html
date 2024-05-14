@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>~ christian :: private ~ </title>
+        <meta charset="utf-8">
+        <!-- include the termynal stylesheet -->
+        <link rel="stylesheet" href="termynal.css">
+        <!-- some custom styles for the page -->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono">
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="favicon.png">
+        <style>
+            body {
+                --color-bg: #3b4252;
+                --color-text: #81a1c1;
+                --color-text-subtle: #8fbcbb;
+
+                padding: 0; margin: 0;
+                background: #2e3440;
+                width: 100%;
+                min-height: 100vh;
+                display: -webkit-box; display: -ms-flexbox; display: flex;
+                -webkit-box-align: center; -ms-flex-align: center; align-items: center;
+                -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
+                -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- the termynal container -->
+         <!-- the termynal container -->
+         <div id="termynal" data-termynal data-ty-typeDelay="40" data-ty-lineDelay="700">
+            <span data-ty="input" data-ty-prompt="$">sudo pacman -S info</span>
+            <span data-ty>Are you sure you want to install 'info'?</span>
+            <span data-ty="input" data-ty-typeDelay="1000" data-ty-prompt="(y/n)">y</span>
+            <span data-ty="progress" data-ty-progressChar="·"></span>
+            <span data-ty>Installed 'info'</span>
+            <span data-ty="input" data-ty-prompt="$">info</span>
+            <span data-ty>Welcome!</span>
+            <span data-ty>Hello my name is Christian and I am a Senior Full Stack Developer.</span>
+            <span data-ty>I'm a Arch Linux fanatic, love my job, love music and this is not a public website</span>
+            <span data-ty>In my free time I develop the Arch Linux Distribution "sudoOS", World of Warcraft AddOns, DayZ Mods and many other small and useful things mostly for private use.</span>
+            <span data-ty="input" data-ty-prompt="$">cd ~/contacts</span>
+            <span data-ty="input" data-ty-prompt="$ ~/contacts"> ls -a</span>
+            <span data-ty><a href="mailto:sudo@sudo.tf">.email</a>  <a href="https://github.com/sudoworld" target="_blank">.github</a></span>
+        </div>
+        <!-- include and initialise termynal.js -->
+        <script src="termynal.js" data-termynal-container="#termynal"></script>
+    </body>
+</html>
